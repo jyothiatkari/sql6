@@ -1,0 +1,33 @@
+
+
+--->CROSS JOIN rows count:
+If employee has 5 rows and department has 4 rows, a CROSS JOIN returns 5 × 4 = 20  because each row of one table combines with every row of the other table.
+
+
+
+--->Joining INT with VARCHAR:
+SQL performs implicit type conversion. This may cause performance issues, incorrect results, or errors if values are incompatible. Best practice is to join columns of the same datatype or use explicit casting.
+
+
+--->Ambiguous column error:
+Occurs when multiple joined tables contain the same column name and the column is referenced without a table alias, so SQL cannot determine which column to use.
+
+
+--->Joining without Primary Key and Foreign Key:
+Yes, tables can be joined without PK–FK constraints as long as there is a logical matching condition between columns.
+
+
+
+--->JOIN vs JOIN…ON vs CROSS JOIN:
+
+* JOIN (INNER JOIN) returns only matching rows.
+* JOIN … ON explicitly specifies the join condition.
+* CROSS JOIN returns the Cartesian product of both tables without any condition.
+
+
+
+--->INNER JOIN vs LEFT JOIN:
+
+* INNER JOIN` returns only rows that match in both tables.
+* LEFT JOIN` returns all rows from the left table and matching rows from the right table; non-matching rows show NULL.
+
